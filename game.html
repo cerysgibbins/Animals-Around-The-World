@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		
+		<link rel="stylesheet" href="styles.css"/>
+		<title>Animals around the World!</title>
+		<meta name ="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1"/>
+		
+		<script src="javascript/jquery-1.11.1.min.js"></script>
+		<script src="javascript/script.js"></script>
+		<script src="javascript/java.js"></script>
+		<script src="javascript/hangman.js"></script>
+		
+	</head>	
+		<body onLoad="reset(); return true;">
+			<div id="wrapper">
+			
+			<!-- Menu here-->
+			<nav id="mainMenu" class="headerContent">
+                    <div id="navHamburger">
+
+                        <a href="navMainMenu">
+                    		<span></span>
+							<span></span>
+							<span></span>
+                        </a>
+                    </div>
+                    <ul id="navMainMenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="game.html">Interactive Game</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+			
+				<a href="index.html"><img src='images/logo.png' alt="" id="logo"></a>
+			
+				<div id="pageContent">
+						<h1>Hangman</h1>
+
+					<p><img src="images/hmstart.gif" height="125" width="75" alt="" id="hm"/></p>
+						<form name="game">
+						Answer: <input type="text" name="displayWord"><br>
+						Used Letters: <input type="text" name="usedLetters">
+						</form>
+						<b><a href="javascript:selectLetter('A');">A</a> | 
+						<a href="javascript:selectLetter('B');">B</a> | 
+						<a href="javascript:selectLetter('C');">C</a> | 
+						<a href="javascript:selectLetter('D');">D</a> | 
+						<a href="javascript:selectLetter('E');">E</a> | 
+						<a href="javascript:selectLetter('F');">F</a> | 
+						<a href="javascript:selectLetter('G');">G</a> | 
+						<a href="javascript:selectLetter('H');">H</a> | 
+						<a href="javascript:selectLetter('I');">I</a> | 
+						<a href="javascript:selectLetter('J');">J</a> | 
+						<a href="javascript:selectLetter('K');">K</a> | 
+						<a href="javascript:selectLetter('L');">L</a>
+						<a href="javascript:selectLetter('M');">M</a><br>
+						<a href="javascript:selectLetter('N');">N</a> | 
+						<a href="javascript:selectLetter('O');">O</a> | 
+						<a href="javascript:selectLetter('P');">P</a> | 
+						<a href="javascript:selectLetter('Q');">Q</a> | 
+						<a href="javascript:selectLetter('R');">R</a> | 
+						<a href="javascript:selectLetter('S');">S</a> | 
+						<a href="javascript:selectLetter('T');">T</a> | 
+						<a href="javascript:selectLetter('U');">U</a> | 
+						<a href="javascript:selectLetter('V');">V</a> | 
+						<a href="javascript:selectLetter('W');">W</a> | 
+						<a href="javascript:selectLetter('X');">X</a> | 
+						<a href="javascript:selectLetter('Y');">Y</a> | 
+						<a href="javascript:selectLetter('Z');">Z</a><br></b>
+
+						<b><br><a href="javascript:reset()">Start game / Reset game</a></b>
+						
+						<div id="gameClues">
+							<h2>Clues : </h2>
+								<ul id="questions">
+									<li>What animal lives in the Artic Circle?</li>
+									<li>This animal can live between 10-14 years in the wild?</li>
+									<li>Preyed on by lions?</li>
+									<li>Can be known as a Bison?</li>
+									<li>Are native to the south central of China?</li>
+									<li>They have a long muscular tail, helps them with balance?</li>
+								</ul>
+						</div>
+						
+						<img class="clues" src='images/clues.png' alt="">	
+						
+				</div>
+
+			</div>
+			
+				
+			
+			
+			<footer id="pageFooter">
+				 Copyright© Cerys Gibbins P135371 - Web Development
+			</footer>
+		
+		</body>
+	
+</html>

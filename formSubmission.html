@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		
+		<link rel="stylesheet" href="styles.css"/>
+		<title>Animals around the World!</title>
+		<meta name ="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1"/>
+		
+		<script src="javascript/jquery-1.11.1.min.js"></script>
+		<script src="javascript/script.js"></script>
+		<script src="javascript/java.js"></script>
+		
+	</head>	
+		<body>
+			<div id="wrapper">
+			
+			<!-- Menu here-->
+			<nav id="mainMenu" class="headerContent">
+                    <div id="navHamburger">
+
+                        <a href="navMainMenu">
+                    		<span></span>
+							<span></span>
+							<span></span>
+                        </a>
+                    </div>
+                    <ul id="navMainMenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="game.html">Interactive Game</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+			
+				<a href="index.html"><img src='images/logo.png' alt="" id="logo"></a>
+				
+				<div id="pageContent">
+						<!-- insert page content here -->
+						<h4>Thank you for contacting me.</h4>
+						<p>I will respond to your query as soon as possible.</p><br />
+						<p><strong>The URL of this page is:</strong><br />(It includes the name/value pairs of the completed fields of your submitted form data after the "?".)</p>
+						<p>
+							<script type="text/javascript">
+								document.write(decodeURIComponent(document.location.href));
+							</script>
+						</p>
+						<br />
+						<p><strong>Here are the fields that you submitted:</strong></p>
+						<p>
+							<script type="text/javascript">
+								document.write(decodeURIComponent(document.location.search.substring(1).replace(new RegExp("&", "g"),
+								"<br/>")).replace(new RegExp("\\+", "g"), " "));
+							</script>
+						</p>
+				</div>
+			
+			
+			
+			
+			</div>
+			
+				
+			
+			
+			<footer id="pageFooter">
+				 Copyright© Cerys Gibbins P135371 - Web Development
+			</footer>
+		
+		</body>
+	
+</html>

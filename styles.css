@@ -1,0 +1,504 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    width: 100%;
+	height: 100%;
+}
+
+
+/* START of Menu */
+#navMainMenu{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+	background: #a7bc7a url('images/pattern.png') repeat;
+}
+
+#navMainMenu li{
+    display:inline;
+}
+
+#navMainMenu a{
+    display:inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+    padding:10px;
+	padding-left: 80px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Helvetica;
+	color: #FFFFFF;
+}
+
+#navMainMenu a:hover {
+	color:#154F00;
+}
+
+/* END of Menu */
+
+#logo {
+	position: relative;
+   left: 100px;
+   top: -100px;
+   margin-bottom: -90px;
+}
+
+#pageContent  {
+	margin: 15px 0 0 250px;
+	width: 70%;
+	background: #B4D1A6;
+	min-height: 85%;
+	padding:21px;
+	border-top-right-radius: 28px 28px;
+	border-bottom-left-radius: 28px 28px;
+	border-top-left-radius: 28px 28px;
+	border-bottom-right-radius: 28px 28px;
+	opacity: 0.9;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+p {
+	font-size: 20px;
+	font-family: Helvetica;
+	padding-top:50px;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align:center;
+	font-family: Courier New;
+	font-size: 50px;
+	color: #FFFFFF;
+	border-style: ridge;
+	border-width:5px;
+}
+
+/* START of IMAGES*/ 
+.center img {
+	opacity: 0.25;
+}
+.center img:hover {
+	opacity: 1.0; 
+}
+
+.deg0 img {
+	opacity: 0.25;
+}
+
+.deg0 img:hover {
+	opacity: 1.0;
+}
+
+.deg45 img {
+	opacity: 0.25;
+}
+
+.deg45 img:hover {
+	opacity: 1.0;
+}
+
+.deg135 img {
+	opacity: 0.25;
+}
+
+.deg135 img:hover {
+	opacity: 1.0;
+}
+
+.deg180 img {
+	opacity: 0.25;
+}
+
+.deg180 img:hover {
+	opacity: 1.0;
+}
+
+.deg225 img {
+	opacity: 0.25;
+}
+
+.deg225 img:hover {
+	opacity: 1.0;
+}
+
+.deg315 img {
+	opacity: 0.25;
+}
+
+.deg315 img:hover {
+	opacity: 1.0;
+}
+
+/* START of circling images */
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 50%; 
+	left: 50%;
+	height:220px;
+    margin: -70px;
+}
+.center img{ 
+	transform: translate(-100px);
+	margin-top: -100px;
+}
+
+.circle-container img { display: block; width: 100%;}
+
+.deg0 { transform: translate(450px);  padding: 20px; }
+.deg45 { transform: rotate(45deg) translate(450px) rotate(-45deg);}
+.deg135 { transform: rotate(135deg) translate(450px) rotate(-135deg);}
+.deg180 { transform: translate(-450px); padding: 20px;}
+.deg225 { transform: rotate(225deg) translate(450px) rotate(-225deg);}
+.deg315 { transform: rotate(315deg) translate(450px) rotate(-315deg); }
+
+/* END of IMAGES */
+
+#gameClues {
+	font-size: 16px;
+	font-family: Helvetica; 
+	margin-top: -300px;
+	margin-right: 50px;
+	float: right;
+}
+
+img.clues {
+	margin-top: 10px;
+	margin-right: 50px;
+	float: right;;
+}
+
+/* GALLERY */
+#gallery {
+	width: 100%;
+	height: 520px; 
+	margin: 0px auto;
+	position: relative;
+}
+
+#gallery > img{
+	float: left;
+	width: 24%;
+	height: 44%;
+	padding: 20px;
+	padding-left:70px;
+	position: relative;
+	margin: 0.5%;
+}
+
+div.contactForm + footer {
+	padding: 10px 0px;
+	clear: both;
+}
+
+.contactForm label { 
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+label {
+	font-size: 20px;
+	font-family: Helvetica;
+}
+
+.contactForm input, .contactForm textarea, .contactForm select {
+	width: 315px;
+	margin-left: 5px; 
+}
+
+#getInTouchForm > div, #jobForm > div {
+	margin: 5px 0px;
+}
+
+.contactForm .autoSize {
+	width: auto;
+}
+
+
+#pageFooter {
+	font-size: 20px;
+	font-family: Helvetica;
+	padding-top:50px;
+	padding-bottom: 20px;
+	text-align: center;
+    margin:0;
+    padding:10px;
+	color: #FFFFFF;
+	background: #a7bc7a url('images/pattern.png') repeat;
+}
+
+	@media screen and (max-width: 768px)  /* 768px*/
+	{
+
+		#mainMenu {
+		width: 100%;	
+		}
+	
+		#navMainMenu {
+		display: none;
+		width: 100%;
+		position: absolute;	
+		z-index:1;		
+		}
+		
+		#navMainMenu > li {
+		display: block;
+		padding: 50px ;
+		}
+		
+		#navHamburger {
+		position: relative;
+		display: inline-block;
+		width: 68px;
+		height: 32px;
+		padding-left:85%;
+		background: #a7bc7a url('images/pattern.png') repeat;
+		}
+	
+		#navHamburger > a {
+		display: inline-block;
+		}
+		
+		#navHamburger  span {
+		background-color: #25871A;
+		width: 30px;
+		height: 4px;
+		margin-top: 5px;
+		margin-bottom: 3px;
+		display: block; 
+		}
+	
+		.expand {
+			background-color: #FFF;
+			font-weight: bold;
+			font-size: 20px;
+			color: #156B15;
+		}
+
+		#navHamburger.expand:before {
+			content: "X";
+			cursor: pointer;
+		}
+		
+		.expand span {
+			display: none;	
+		}
+		
+		.expand {
+			display: inline-block;	
+		}
+		
+		#logo {
+			position: relative;
+		   left: 250px;
+		   top: -90px;
+		   margin-bottom: -90px;
+		}
+		
+		.center img {
+		transform: translate(-80px);
+		margin-top: -135px;
+		height: 330px;
+		}
+	
+		.circle-container img { 
+			display: block; 
+			margin-top:-100px;
+			width: 100%;
+		}
+		
+		.deg0 { transform: translate(250px); }
+		.deg45 { transform: rotate(45deg) translate(380px) rotate(-45deg); }
+		.deg135 { transform: rotate(135deg) translate(380px) rotate(-135deg);}
+		.deg180 { transform: translate(-280px);}
+		.deg225 { transform: rotate(225deg) translate(380px) rotate(-225deg);} 
+		.deg315 { transform: rotate(315deg) translate(380px) rotate(-315deg); }
+		
+		
+		#pageContent  {
+			margin: 1px 0 0 15px;
+			width: 85%;
+			background: #B4D1A6;
+			min-height: 90%;
+			padding:21px;
+			border-top-right-radius: 28px 28px;
+			border-bottom-left-radius: 28px 28px;
+			border-top-left-radius: 28px 28px;
+			border-bottom-right-radius: 28px 28px;
+			opacity: 0.9;
+		}
+		
+		img.displayed {
+			width: 650px;
+			height:400px;
+		}
+		
+		#gameClues {
+			font-size: 16px;
+			font-family: Helvetica; 
+			margin-top: -400px;
+			margin-left: 280px;
+			float: right;
+		}
+
+		img.clues {
+			margin-top: 50px;
+			margin-right: 100px;
+		
+		}	
+
+		#gallery > img{
+			float: left;
+			width: 40%;
+			height: 45%;
+			padding: 10px;
+			padding-left: 30px;
+			position: relative;
+			margin: 0.5%;
+		}		
+	}
+	
+	/* MOBILE */
+	@media screen and (max-width: 360px) 
+	{
+		#logo {
+			position: relative;
+		   left: 50px;
+		   top: -90px;
+		   margin-bottom: -90px;
+		}
+		
+		.circle-container a {
+			top: 40%; 
+			left: 50%;
+			height:20px;
+			margin: -70px;
+		}
+		
+		.circle-container img { 
+			display: none;
+		}
+		
+		.center img {
+			display: block;
+			width: 250px;
+			height: 250px;
+			margin:20px;
+			margin-top: -200px;
+		}
+		
+		.deg45 img {
+			display:block;
+			width: 90px;
+			height: 90px;
+			margin-left: -370px;
+			margin-top: -175px;
+		}
+		
+		.deg0 img {
+			display: block;
+			width: 90px;
+			height: 90px;
+			margin: -250px;
+			margin-top: 75px;
+		}
+		
+		.deg135 img {
+			display: block;
+			width: 90px;
+			height: 90px;
+			margin-left: 410px;
+			margin-top: -175px;
+		}
+		
+	
+		.deg225 img {
+			display:block;
+			width: 90px;
+			height: 90px;
+			margin-left: 168px;
+			margin-top: 550px;
+		}
+		
+		.deg315 img {
+			display:block;
+			width: 90px;
+			height: 90px;
+			margin-left: -128px;
+			margin-top: 550px;
+		}
+		
+		.deg180 img {
+			display:block;
+			width: 90px;
+			height: 90px;
+			margin: 280px;
+			margin-top: 260px;*/
+		} /* - IMAGE NOT ALLOW TO HOVER OVER 2 FIRST IMAGES WHEN ADDED MARGIN!!! - */
+		
+		img.displayed {
+			width: 280px;
+			height:180px;
+		}
+		
+		p {
+			font-size: 16px;
+			font-family: Helvetica;
+			padding-top:10px;
+		}
+		#pageContent  {
+			margin: 0 0 0 1px;
+			width: 85%;
+			background: #B4D1A6;
+			min-height: 85%;
+			padding:21px;
+			border-top-right-radius: 28px 28px;
+			border-bottom-left-radius: 28px 28px;
+			border-top-left-radius: 28px 28px;
+			border-bottom-right-radius: 28px 28px;
+			opacity: 0.9;
+		}
+
+		#gameClues {
+			font-size: 12px;
+			margin: 0px;
+			margin-right: 50px;
+			font-family: Helvetica; 
+		}
+	
+		img.clues {
+			width: 80%;
+			margin-top: 50px;
+			margin-right: 0px;
+		
+		}
+
+		#gallery > img{
+				float: left;
+				width: 38%;
+				height: 30%;
+				padding: 15px;
+				position: relative;
+				margin: 0.5%;
+			}			
+	}
+		
+	
+	
+		
+
+

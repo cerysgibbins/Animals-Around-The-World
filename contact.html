@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		
+		<link rel="stylesheet" href="styles.css"/>
+		<title>Animals around the World!</title>
+		<meta name ="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1"/>
+		
+		<script src="javascript/jquery-1.11.1.min.js"></script>
+		<script src="javascript/script.js"></script>
+		<script src="javascript/java.js"></script>
+		
+	</head>	
+		<body>
+			<div id="wrapper">
+			
+			<!-- Menu here-->
+			<nav id="mainMenu" class="headerContent">
+                    <div id="navHamburger">
+
+                        <a href="navMainMenu">
+                    		<span></span>
+							<span></span>
+							<span></span>
+                        </a>
+                    </div>
+                    <ul id="navMainMenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="game.html">Interactive Game</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+			
+				<a href="index.html"><img src='images/logo.png' alt="" id="logo"></a>
+				
+				<div id="pageContent">
+						<h1>Contact</h1>
+						
+						<p>We hope you have had a great experience at our Animals around the World website. If you have come across any problems please feel free to leave us a message through our query box below.</p>
+					
+						<form id="getInTouchForm" method="get" action="formSubmission.html">
+			
+						<div>
+							<label for="contactFirstName">From:</label>
+							<input class="autoSize" type="text" name="contactFirstName" id="contactFirstName" placeholder="First Name" required/>
+							<input class="autoSize" type="text" name="contactSurname" id="contactSurname" placeholder="Surname" required />
+						</div>
+						
+						<div>
+							<label for="contactEmail">Email:</label>
+							<input type="email" name="contactEmail" id="contactEmail" placeholder="Your email address" required />
+						</div>
+						
+						<div>
+							<label for="contactMessage">Message:</label>
+							<textarea name="contactMessage" id="contactMessage" placeholder="Your message" required></textarea>
+						</div>
+						
+						<div>
+							<input class="autoSize" type="checkbox" name="contactCopyMe" id="contactCopyMe" required />Send a copy of this message.
+							<label class="autoSize" for="contactCopyMe"></label>
+						</div>
+					
+						<div>
+							
+							<input class="autoSize" type="submit" value="Send Message" />
+						</div>
+				
+				
+					</form>
+				</div>
+			
+			
+			
+			
+			</div>
+			
+				
+			
+			
+			<footer id="pageFooter">
+				 Copyright© Cerys Gibbins P135371 - Web Development
+			</footer>
+		
+		</body>
+	
+</html>
